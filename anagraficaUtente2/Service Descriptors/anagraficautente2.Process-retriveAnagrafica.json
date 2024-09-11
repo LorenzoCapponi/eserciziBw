@@ -1,0 +1,51 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "retriveAnagrafica",
+    "description" : "retriveAnagrafica service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/retriveanagrafica" : {
+      "get" : {
+        "summary" : "getRetriveAnagrafica",
+        "description" : "getRetriveAnagrafica",
+        "operationId" : "get-retriveanagrafica",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "a response to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/response"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "response" : {
+      "type" : "object",
+      "required" : [ "cdf", "cognome", "data_nascita", "nome" ],
+      "properties" : {
+        "nome" : {
+          "type" : "string"
+        },
+        "cognome" : {
+          "type" : "string"
+        },
+        "data_nascita" : {
+          "type" : "string"
+        },
+        "cdf" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

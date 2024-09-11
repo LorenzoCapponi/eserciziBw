@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/retriveAnagrafica" xmlns:tns="http://www.example.org/retriveAnagrafica" elementFormDefault="qualified">
+
+    <element name="request" type="tns:RequestType"></element>
+    
+    <element name="response" type="tns:ResponseType"></element>
+    
+    <complexType name="RequestType">
+    	<sequence>
+    		<element name="cdf" type="string"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="ResponseType">
+    	<sequence>
+    		<element name="nome" type="string"></element>
+    		<element name="cognome" type="string"></element>
+    		<element name="data_nascita" type="string"></element>
+    		<element name="cdf" type="string"></element>
+    	</sequence>
+    </complexType>
+</schema>

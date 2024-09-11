@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_VdU24G9TEe-nJf0AdT4beA" targetNamespace="http://tns.tibco.com/bw/composite/anagraficaUtente2" name="anagraficaUtente2" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_e1X5cG9VEe-nJf0AdT4beA" name="resource" promote="ComponentProcess/resource">
+    <sca:interface.wsdl xmi:id="_e1X5dG9VEe-nJf0AdT4beA" interface="http://xmlns.example.com/20240910111642PLT#wsdl.interface(resource)" scaext:wsdlLocation="../Processes/anagraficautente2/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_e1ZuoG9VEe-nJf0AdT4beA" name="RestService" path="/resource" docBasePath="http://localhost:7777/anagraficaUtente2" docResourcePath="Resource" basePath="/" connector="anagraficautente2.retriveAnagrafica" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/anagraficautente2.Process-Resource.json">
+      <operation xmi:id="_e1aVsG9VEe-nJf0AdT4beA" operationName="get" nickname="get-resource" httpMethod="GET" notes="getResource" responseStyle="element" outputPartName="item">
+        <parameters xmi:id="_rAhAoG9VEe-nJf0AdT4beA"/>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_e1q0YG9VEe-nJf0AdT4beA"/>
+      <advancedConfig xmi:id="_e1ZuoW9VEe-nJf0AdT4beA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_e1aVsW9VEe-nJf0AdT4beA" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_Xo9oAG9TEe-nJf0AdT4beA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_XpGx8G9TEe-nJf0AdT4beA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_XpOtwG9TEe-nJf0AdT4beA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_XpTmQG9TEe-nJf0AdT4beA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_XpYewG9TEe-nJf0AdT4beA" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_XpfzgG9TEe-nJf0AdT4beA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_XpksAG9TEe-nJf0AdT4beA" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Xpo9cG9TEe-nJf0AdT4beA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_XpqyoG9TEe-nJf0AdT4beA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_ZIvt0G9VEe-nJf0AdT4beA" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ZIvt0W9VEe-nJf0AdT4beA" processName="anagraficautente2.Process"/>
+    <sca:service xmi:id="_e1XSYG9VEe-nJf0AdT4beA" name="resource">
+      <sca:interface.wsdl xmi:id="_e1XSYW9VEe-nJf0AdT4beA" interface="http://xmlns.example.com/20240910111642PLT#wsdl.interface(resource)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
